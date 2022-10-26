@@ -25,9 +25,15 @@ form {
   align-items: center;
 }
 
+p {
+  display: flex;
+  text-align: center;
+}
+
 form input,
 form button {
   padding: 0.5rem;
+  margin: 20;
   font-size: 2rem;
   border: none;
   background: white;
@@ -121,4 +127,32 @@ form button:hover {
 }
 .todo-input {
   margin-left: 38px;
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: large;
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+  h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
 }
