@@ -27,13 +27,13 @@ form button {
   background: white;
 }
 form button {
-  color: blue;
-  background: #f7fffe;
+  color: #494d5f;
+  background: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: purple;
+  background: #8458b3;
   color: white;
 }
 .todo-container {
@@ -67,7 +67,6 @@ form button:hover {
 .trash-btn,
 .complete-btn,
 .edit-btn {
-  background: red;
   color: white;
   border: none;
   padding: 1rem;
@@ -75,13 +74,26 @@ form button:hover {
   font-size: 1rem;
 }
 
-.edit-btn {
-  border-radius: 20px;
-  background: blue;
-}
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: #51d0de;
 }
+.trash-btn {
+  background: red;
+}
+.edit-btn {
+  background: #393f4d;
+}
+
+.complete-btn:hover {
+  background: rgb(11, 185, 11);
+}
+.trash-btn:hover {
+  background: rgb(11, 185, 11);
+}
+.edit-btn:hover {
+  background: rgb(11, 185, 11);
+}
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
